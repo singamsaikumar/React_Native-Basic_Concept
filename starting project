@@ -1,0 +1,41 @@
+1)
+if you are using expo
+npm install -g expo-cli
+
+2)
+or you can use
+npx react-native init projectname
+
+3)
+so it generate few files
+inside android we have to create local.properties
+in this file give this location and save this will different for another system this you will get in anroid studio
+sdk.dir = C:\\Users\\ROS5-PC\\AppData\\Local\\Android\\Sdk
+
+4)
+\android\app\src\main inside this we have to create a newfile name as assets
+
+5)
+open this location myproject then run cmd 
+then run in cmd = npm i or npm install 
+
+6)
+then open \android in cmd then run = gradlew clean
+
+7)
+then go back to project by run command = cd ..
+ 
+8)
+then to open project run = code . 
+
+9)
+it will open Visual studio code 
+then open terminal then run bundle command = 
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+
+10)
+then attach your mobile to pc then run =
+react-native run-android
+
+
+
